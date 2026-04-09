@@ -6,7 +6,12 @@ function Footer() {
     },
     {
       title: "HELP",
-      links: ["Customer Support", "Delivery Details", "Terms & Conditions", "Privacy Policy"],
+      links: [
+        "Customer Support",
+        "Delivery Details",
+        "Terms & Conditions",
+        "Privacy Policy",
+      ],
     },
     {
       title: "FAQ",
@@ -14,7 +19,12 @@ function Footer() {
     },
     {
       title: "RESOURCES",
-      links: ["Free eBooks", "Development Tutorial", "How to - Blog", "Youtube Playlist"],
+      links: [
+        "Free eBooks",
+        "Development Tutorial",
+        "How to - Blog",
+        "Youtube Playlist",
+      ],
     },
   ];
 
@@ -34,7 +44,7 @@ function Footer() {
               <input
                 type="email"
                 placeholder="Enter your email address"
-                className="w-full bg-transparent text-sm outline-none"
+                className="w-full bg-transparent text-sm outline-none border-none"
               />
             </div>
             <button className="h-12 w-full rounded-full bg-white font-medium text-black transition hover:bg-gray-100">
@@ -45,10 +55,12 @@ function Footer() {
 
         <div className="grid gap-8 border-b border-gray-300 pb-8 lg:grid-cols-5">
           <div className="lg:col-span-1">
-            <h2 className="mb-4 text-[42px] font-black leading-none">SHOP.CO</h2>
+            <h2 className="mb-4 text-[42px] font-black leading-none">
+              SHOP.CO
+            </h2>
             <p className="mb-5 max-w-[260px] text-sm text-gray-600">
-              We have clothes that suits your style and which you&apos;re proud to
-              wear. From women to men.
+              We have clothes that suits your style and which you&apos;re proud
+              to wear. From women to men.
             </p>
             <div className="flex gap-3">
               {["𝕏", "f", "◎", "◍"].map((icon) => (
@@ -65,11 +77,16 @@ function Footer() {
           <div className="grid grid-cols-2 gap-8 sm:gap-10 lg:col-span-4 lg:grid-cols-4">
             {footerColumns.map((col) => (
               <div key={col.title}>
-                <h4 className="mb-4 text-sm font-semibold tracking-[0.2em]">{col.title}</h4>
+                <h4 className="mb-4 text-sm font-semibold tracking-[0.2em]">
+                  {col.title}
+                </h4>
                 <ul className="space-y-2.5 text-gray-600">
                   {col.links.map((link) => (
                     <li key={link}>
-                      <a href="#" className="hover:text-black transition-colors">
+                      <a
+                        href="#"
+                        className="hover:text-black transition-colors"
+                      >
                         {link}
                       </a>
                     </li>
